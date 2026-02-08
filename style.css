@@ -1,0 +1,155 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #0a0f1c, #111827);
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+.site-header {
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 18px;
+  color: #9ca3af;
+  margin-bottom: 15px;
+}
+
+/* CONTACT LINKS */
+.contact-nav a {
+  text-decoration: none;
+  color: #e5e7eb;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.contact-nav a:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+/* IMAGE */
+.header-right img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
+/* MAIN */
+main {
+  padding: 40px 0;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255,255,255,0.04);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* HEADINGS */
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #60a5fa;
+}
+
+/* ARTICLES */
+article {
+  margin-bottom: 15px;
+}
+
+article h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* LISTS */
+ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* FOOTER */
+.site-footer {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 20px 0;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN (ITMD 541 requirement) */
+@media (max-width: 900px) {
+  .header-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .header-right img {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
